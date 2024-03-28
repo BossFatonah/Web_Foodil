@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Foodil</title>
+</head>
+
+<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!---โหลดฟอนต์-->
+
+    <div class="container"> <!--สร้าง div container -->>
+
+        <header> <!---ใช้เพื่อระบุส่วนหัวของเว็บไซต์ โดยทั่วไปแล้วจะประกอบด้วยส่วนที่แสดงข้อมูลหรือลิงก์ที่เกี่ยวข้องกับหน้าเว็บที่กำลังแสดงอยู่ เช่น เมนูนำทาง โลโก้ -->
+            <nav id="navbar"> <!---<nav id="navbar">: แท็ก <nav> ใช้เพื่อระบุส่วนของเว็บไซต์ที่มีลิงก์เพื่อนำทาง ในที่นี้คือเมนูนำทาง ซึ่งมี id เป็น "navbar" เพื่อให้ง่ายต่อการระบุและดำเนินการกับเนื้อหาด้านนอกของ HTML ด้วย JavaScript หรือ CSS-->
+                <div class="logo"><span>Foodie</span></div> <!--- เป็นส่วนของโลโก้ที่อยู่ในเมนูนำทาง โดยใช้แท็ก <div> และกำหนดคลาสเป็น "logo" และมีข้อความ "Foodie" อยู่ภายในแท็ก <span>-->
+                <ul> <!--<ul> และ <li>: เป็นแท็กที่ใช้สำหรับการสร้างรายการลิงก์ภายในเมนูนำทาง โดยใช้แท็ก <ul> เพื่อกำหนดรายการลิงก์เป็นลำดับและ <li> เป็นแต่ละรายการ-->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#order">Order</a></li>
+                </ul>
+            </nav>
+
+            <div class="overlay"> <!--<div class="overlay">: เป็นส่วนของซ้อนทับที่ใช้ในการแสดงข้อความหรือภาพพื้นหลัง ในที่นี้อาจใช้เพื่อสร้างเอฟเฟคในการเปลี่ยนหน้าหรือประกาศข้อความสำคัญ-->
+                <section id="home"> <!--<section id="home">: เป็นส่วนที่ใช้แสดงเนื้อหาหลักของหน้าเว็บ ซึ่งมี id เป็น "home" เพื่อให้ง่ายต่อการระบุและดำเนินการกับเนื้อหาด้านนอกของ HTML ด้วย JavaScript หรือ CSS-->
+                    <h1 class="h-primary">Welcome to Foodie </h1> <!--<h1 class="h-primary">Welcome to Foodie </h1>: เป็นส่วนของหัวข้อหลักของเนื้อหา ในที่นี้เป็น <h1> ซึ่งมีคลาสเป็น "h-primary" เพื่อกำหนดลักษณะการแสดงผลของข้อความให้ตรงตามที่กำหนด-->
+                    <br> <!-- เว้นบรรทัด-->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p> <!--<p>: เป็นแท็กที่ใช้ในการสร้างย่อหน้าข้อความ-->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                    <button class="btn2">Order Now</button> <!--<button class="btn btn-primary" style="">Order Now</button>: เป็นแท็ก <button> ที่ใช้สร้างปุ่ม ในที่นี้มีคลาสเป็น "btn btn-primary" เพื่อกำหนดลักษณะการแสดงผลของปุ่มให้ตรงตามที่กำหนด และมีข้อความ "Order Now" อยู่บนปุ่ม-->
+                </section>
+            </div>
+        </header>
+
+
+
+        <div id="menu">
+            <div class="heading">
+                <h1>Menu</h1>
+                <h3>Today's Special</h3>
+            </div>
+            <div class="card">
+                <img src="image/photo-1626074353765-517a681e40be.avif"> <!--`<img src="image/photo-1626074353765-517a681e40be.avif">` คือแท็ก HTML ที่ใช้ในการแสดงภาพบนหน้าเว็บไซต์ โดยมีแอตทริบิวต์ "src" ซึ่งระบุที่อยู่ของไฟล์รูปภาพที่ต้องการแสดง ในที่นี้คือ "image/photo-1626074353765-517a681e40be.avif" ซึ่งเป็นที่อยู่ของไฟล์รูปภาพ avif ที่ต้องการแสดงในหน้าเว็บไซต์ โดยภาพนี้จะถูกแสดงที่ตำแหน่งที่มีแท็ก `<img>` อยู่ในโค้ด HTML นั้น ๆ ลักษณะการแสดงภาพจะขึ้นอยู่กับขนาดและรูปแบบของไฟล์รูปภาพนั้น ๆ รวมถึงการใช้ CSS หรือคำสั่งอื่น ๆ ที่อาจมีอยู่ในเว็บไซต์ที่กำลังแสดงภาพดังกล่าวด้วย-->
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Lorem, ipsum.</h5>
+                        <h5 class="price"> $10 </h5>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit reiciendis nam non quia! Earum eveniet
+                        minus. Facilis explicabo natus nihil voluptatem eveniet pariatur.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="card"> <!--<div class="card">: เป็นคอนเทนเนอร์หลักที่ใช้แสดงรายการสินค้าแต่ละรายการในร้านค้า โดยมีคลาส "card" เพื่อให้สามารถกำหนดสไตล์การแสดงผลของรายการสินค้าได้อย่างเหมาะสม-->
+                <img src="image/photo-1593179241557-bce1eb92e47e.avif" alt="">
+                <div class="details"> <!--<div class="details">: เป็นคอนเทนเนอร์ย่อยที่ใช้เก็บรายละเอียดของสินค้า เช่น ชื่อสินค้า, ราคา และปุ่ม "Add To Cart"-->
+                    <div class="details-sub"> <!--<div class="details-sub">: เป็นคอนเทนเนอร์ย่อยที่ใช้เก็บรายละเอียดย่อยของสินค้า เช่น ชื่อสินค้าและราคา-->
+                        <h5>Lorem, ipsum.</h5> <!--<h5>Lorem, ipsum.</h5>: เป็นแท็ก <h5> ที่ใช้แสดงชื่อของสินค้า ในที่นี้เป็น "Lorem, ipsum."-->
+                        <h5 class="price"> $10 </h5> <!--<h5 class="price"> $10 </h5>: เป็นแท็ก <h5> ที่ใช้แสดงราคาของสินค้า โดยมีคลาส "price" เพื่อให้สามารถกำหนดสไตล์การแสดงผลของราคาได้ ในที่นี้เป็น "$10"-->
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing
+                        elit.</p>
+                    <button>Add To Cart</button> <!--<button>Add To Cart</button>: เป็นแท็ก <button> ที่ใช้สำหรับการเพิ่มสินค้าลงในตะกร้าสินค้า ในที่นี้เป็นปุ่ม "Add To Cart" ซึ่งผู้ใช้สามารถคลิกเพื่อทำการเพิ่มสินค้านี้ลงในตะกร้าสินค้าได้-->
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/photo-1606491956689-2ea866880c84.avif" alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Lorem, ipsum.</h5>
+                        <h5 class="price"> $8 </h5>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quibusdam facilis, magni
+                        consectetur necessitatibus.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/photo-1513104890138-7c749659a591.avif" alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Lorem, ipsum.</h5>
+                        <h5 class="price"> $12 </h5>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/photo-1568901346375-23c9450c58cd.avif" alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Lorem, ipsum.</h5>
+                        <h5 class="price"> $15 </h5>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae doloremque fugit sequi quidem
+                        eveniet?</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/photo-1603894584373-5ac82b2ae398.avif" alt=""> <!--<img src="image/photo-1626074353765-517a681e40be.avif">: คือแท็ก <img> ซึ่งใช้ในการแสดงภาพของรายการอาหาร โดยกำหนดที่อยู่ของไฟล์รูปภาพที่ต้องการแสดงในแอตทริบิวต์ "src"-->
+                <div class="details"> <!--<div class="details">: เป็นส่วนที่แสดงรายละเอียดของรายการอาหาร ประกอบด้วยหัวเรื่องย่อย <h5> ราคา <h5 class="price"> และคำอธิบาย <p> เกี่ยวกับรายการอาหารนั้น ๆ รวมถึงปุ่ม "Add To Cart" ซึ่งในที่นี้เป็นข้อความสำหรับเพิ่มรายการอาหารลงในตะกร้าสินค้า
+
+                    ทั้งนี้การใช้ class ในแต่ละ element มักจะใช้ในการกำหนดสไตล์ของเนื้อหา หรือสำหรับใช้ในการจัดรูปแบบหรือการจัดระเบียบหน้าเว็บไซต์ด้วย CSS โดยทั่วไปแล้ว class จะถูกใช้เพื่อให้สามารถระบุและจัดการกับกลุ่มของ element ได้อย่างสะดวกและมีประสิทธิภาพในการแก้ไขหรือปรับปรุงการแสดงผลของหน้าเว็บไซต์ได้ในภายหลัง-->
+                    <div class="details-sub">
+                        <h5>Lorem, ipsum.</h5>
+                        <h5 class="price"> $14 </h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus reiciendis nam non quia! Earum
+                        eveniet quia.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about">
+            <h1 class="title">About us</h1>
+            <div class="about_row"> <!--<div class="about_row">: เป็นแถวที่ใช้เรียงเนื้อหาเกี่ยวกับเราในแนวนอน-->
+                <div class="about_column">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aperiam id saepe
+                        natus tempore adipisci neque incidunt vel nam, distinctio, eos labore cupiditate assumenda
+                        doloremque. Assumenda illo delectus aliquid libero, quisquam vero facere molestias neque
+                        similique, aperiam dolores ex mollitia nobis nostrum blanditiis autem qui itaque quos, nisi
+                        dolore.</p>
+                    <button id="btn1">learn more</button>
+                </div>
+                <div class="about_column">
+                    <img src="image/chafe.avif" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="order">
+            <h1 class="title1">order</h1> <!--<button id="btn1">learn more</button>: เป็นปุ่มที่ใช้ในการเรียนรู้เพิ่มเติมเกี่ยวกับบริษัทหรือเว็บไซต์ โดยมี id เป็น "btn1"-->
+            <form action="">
+                <input type="text" class="inp_box" placeholder="Name">
+                <input type="email" class="inp_box" placeholder="Email">
+                <textarea type="text" class="inp_box text_area" placeholder="Adress"></textarea>
+                <button class="btn2">Order Now</button>
+        </div>
+        </form>
+
+    </div>
+    <footer>
+        <div>
+            &copy;copyright 2022
+            <p>
+                Designed by Sonika
+            </p>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>
